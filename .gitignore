@@ -1,4 +1,5 @@
 node_modules
+npm-debug.log
 
 ti/Resources
 ti/app
@@ -12,6 +13,3 @@ ti/spec
 ._*
 Thumbs.db
 .DS_Store
-
-# Dev-specific files
-/build.sh
