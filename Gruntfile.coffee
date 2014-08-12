@@ -210,3 +210,25 @@ module.exports = (grunt) ->
   # titanium cli tasks
   ['iphone6', 'iphone7', 'ipad6', 'ipad7', 'appstore', 'adhoc', 'playstore'].forEach (target) ->
     grunt.registerTask target, ['build','shell:'+target]
+
+  grunt.event.on 'watch', (action, filepath) ->
+    o = {}
+    if (filepath.match /.jade$/ and filepath.indexOf "includes" is -1)
+      o[filepath.replace ".jade", ".xml"] = [filepath]
+      grunt.config.set ['jade', 'compile', 'files'], o
+    else if (filepath.match /.coffee$/ and filepath.indexOf "includes" is -1)
+      o[filepath.replace ".coffee", ".js"] = [filepath]
+      grunt.config.set ['coffee', 'compile', 'files'], o
+    else if (filepath.match /.stss$/ and filepath.indexOf "includes" is -1)
+      if filepath.match /\/_.*?\.stss/
+        grunt.log.write "Partial modified, rewriting all styles"
+        grunt.config.set ['stss', 'compile', 'files'], [
+          expand: true
+          src: ['**/*.stss','!**/_*.stss']
+          cwd: 'ti/src/'
+          dest: 'ti/app/'
+          ext: '.tss'
+        ]
+      else
+        o[filepath.replace ".stss", ".tss"] = [filepath]
+        grunt.config.set ['stss', 'compile', 'files'], o
