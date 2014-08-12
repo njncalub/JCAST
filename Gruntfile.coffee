@@ -79,7 +79,6 @@ module.exports = (grunt) ->
           platform: [ 'ios' ]
       run:
         command: 'run'
-        options:
       spec_android:
         command: 'spec'
         options:
