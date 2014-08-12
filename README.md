@@ -5,7 +5,7 @@ JCAST is a boilerplate with a mash of tools for rapid Alloy development. Forked 
 Let's be opinionated then. The stack includes:
 
  * [Jade](http://jade-lang.com/) - the [best](http://www.yydigital.com/blog/2013/7/10/A_Case_For_Jade_With_Alloy) template engine for alloy views
- * [CoffeeScript](http://coffeescript.org/) a little language that compiles into JavaScript
+ * [CoffeeScript](http://coffeescript.org/) - a little language that compiles into JavaScript
  * [Alloy](http://projects.appcelerator.com/alloy/docs/Alloy-bootstrap/index.html) - Appcelerator's own MVC Framework engine for alloy views
  * [STSS](https://github.com/RonaldTreur/STSS) - Sassy TSS, or Sassy Titanium Style Sheets
  * [TiShadow](http://tishadow.yydigital.com/) - the fastest __Open Source__ toolset for titanium development
@@ -19,8 +19,6 @@ Let's be opinionated then. The stack includes:
  * [Get started](http://tishadow.yydigital.com/getting%20started) with TiShadow
 
 # Let's Go
-
-## Manually
 
  * Clone the repository
  * Install the dependencies: `npm install -d`
