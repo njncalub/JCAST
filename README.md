@@ -1,10 +1,11 @@
-# JAST Stack
+# JCAST Stack
 
-JAST is a boilerplate with a  mash of tools for rapid Alloy development. Let's be opinionated then. The stack includes:
+JCAST is a boilerplate with a  mash of tools for rapid Alloy development. Let's be opinionated then. The stack includes:
 
+ * [Jade](http://jade-lang.com/) - the [best](http://www.yydigital.com/blog/2013/7/10/A_Case_For_Jade_With_Alloy)    template
+ * [CoffeeScript](http://coffeescript.org/) a little language that compiles into JavaScript
  * [Alloy](http://projects.appcelerator.com/alloy/docs/Alloy-bootstrap/index.html) -
    Appcelerator's own MVC Framework
- * [Jade](http://jade-lang.com/) - the [best](http://www.yydigital.com/blog/2013/7/10/A_Case_For_Jade_With_Alloy) template
    engine for alloy views
  * [STSS](https://github.com/RonaldTreur/STSS) - Sassy TSS, or Sassy Titanium Style Sheets.
  * [TiShadow](http://tishadow.yydigital.com/) - the fastest __Open Source__ toolset
