@@ -18,8 +18,8 @@ module.exports = (grunt) ->
           pretty: true
         files: [
           expand: true
-          cwd: 'ti/src/'
-          dest: 'ti/app/'
+          cwd: 'src/'
+          dest: 'app/'
           src: [
             '**/*.jade'
             '!**/includes/**'
@@ -35,8 +35,8 @@ module.exports = (grunt) ->
           sourceMap: true
         files: [
           expand: true
-          cwd: 'ti/src/'
-          dest: 'ti/app/'
+          cwd: 'src/'
+          dest: 'app/'
           src: [
             '**/*.coffee'
           ]
@@ -45,8 +45,8 @@ module.exports = (grunt) ->
       test:
         files: [
           expand: true
-          cwd: 'ti/tests/'
-          dest: 'ti/spec/'
+          cwd: 'tests/'
+          dest: 'spec/'
           src: [
             '**/*.coffee'
           ]
@@ -57,8 +57,8 @@ module.exports = (grunt) ->
       compile:
         files: [
           expand: true
-          cwd: 'ti/src/'
-          dest: 'ti/app/'
+          cwd: 'src/'
+          dest: 'app/'
           src: [
             '**/*.stss'
             '!**/_*.stss'
@@ -68,34 +68,33 @@ module.exports = (grunt) ->
 
     tishadow:
       options:
-        projectDir: 'ti/'
         update: true
       run_android:
         command: 'run'
         options:
-          projectDir: 'ti/'
           platform: [ 'android' ]
       run_ios:
         command: 'run'
         options:
-          projectDir: 'ti/'
           platform: [ 'ios' ]
       run:
         command: 'run'
         options:
-          projectDir: 'ti/'
       spec_android:
         command: 'spec'
         options:
           update: false
-          projectDir: 'ti/'
           platform: [ 'android' ]
       spec_ios:
         command: 'spec'
         options:
           update: false
-          projectDir: 'ti/'
           platform: [ 'ios' ]
+      spec_all:
+        command: 'spec'
+        options:
+          update: false
+          platform: [ 'android', 'ios' ]
       clear:
         command: 'clear'
 
@@ -104,8 +103,8 @@ module.exports = (grunt) ->
         files: [
           expand: true
           dot: true
-          cwd: 'ti/src/'
-          dest: 'ti/app/'
+          cwd: 'src/'
+          dest: 'app/'
           src: [
             '**'
             '!**/*.jade'
@@ -137,19 +136,19 @@ module.exports = (grunt) ->
       options:
         nospawn: true
       ios:
-        files: [ 'ti/src/**/*' ]
+        files: [ 'src/**/*' ]
         tasks: [
           'build'
           'tishadow:run_ios'
         ]
       android:
-        files: [ 'ti/src/**/*' ]
+        files: [ 'src/**/*' ]
         tasks: [
           'build'
           'tishadow:run_android'
         ]
       all:
-        files: [ 'ti/src/**/*' ]
+        files: [ 'src/**/*' ]
         tasks: [
           'build'
           'tishadow:run'
@@ -157,10 +156,10 @@ module.exports = (grunt) ->
 
     clean:
       ti: [
-        'ti/Resources/'
-        'ti/app/'
-        'ti/build/'
-        'ti/spec/'
+        'Resources/'
+        'app/'
+        'build/'
+        'spec/'
       ]
 
   require('matchdep').filterDev('grunt-*').forEach grunt.loadNpmTasks
@@ -225,8 +224,8 @@ module.exports = (grunt) ->
         grunt.config.set ['stss', 'compile', 'files'], [
           expand: true
           src: ['**/*.stss','!**/_*.stss']
-          cwd: 'ti/src/'
-          dest: 'ti/app/'
+          cwd: 'src/'
+          dest: 'app/'
           ext: '.tss'
         ]
       else

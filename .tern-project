@@ -5,7 +5,7 @@
     ],
     "plugins": {
       "requirejs": {
-        "baseURL": "./ti/app",
+        "baseURL": "./app",
         "paths": {}
       }
     }

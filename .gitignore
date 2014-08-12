@@ -1,12 +1,16 @@
 node_modules
 npm-debug.log
 
-ti/Resources
-ti/app
-ti/build
-ti/build.log
-ti/tmp
-ti/spec
+Resources
+app
+build
+build.log
+tmp
+spec
+
+.map
+.project
+.settings
 
 # Temporary Files
 *~
