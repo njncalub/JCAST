@@ -1,7 +1,17 @@
-.DS_Store
-build.log
-build
-npm-debug.log
-tmp
 node_modules
-Resources
+
+ti/Resources
+ti/app
+ti/build
+ti/build.log
+ti/tmp
+ti/spec
+
+# Temporary Files
+*~
+._*
+Thumbs.db
+.DS_Store
+
+# Dev-specific files
+/build.sh
