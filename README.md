@@ -1,6 +1,6 @@
 # JCAST Stack
 
-JCAST is a boilerplate with a mash of tools for rapid Alloy development. Forked from dbankier/JAST
+JCAST is a boilerplate with a mash of tools for rapid Alloy development. Forked from [dbankier/JAST](http://github.com/dbankier/JAST/)
 
 Let's be opinionated then. The stack includes:
 
