@@ -1,24 +1,25 @@
 {
-  "name": "JALT",
+  "name": "JCAST",
   "version": "0.0.1",
-  "description": "JALT is a boilerplate with a mash of tools for rapid Alloy development.",
-  "main": "index.js",
+  "private": true,
+  "description": "JCAST is a boilerplate with a mash of tools for rapid Alloy development. Forked from dbankier/JAST.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "https://github.com/dbankier/JALT",
+  "repository": "https://github.com/njncalub/JCAST",
   "author": "David Bankier",
   "license": "MIT",
   "readmeFilename": "README.md",
   "devDependencies": {
-    "grunt-tishadow": "dbankier/grunt-tishadow",
-    "grunt-stss": "^0.1.0",
-    "grunt-contrib-jade": "~0.8.0",
-    "grunt-contrib-watch": "~0.5.1",
     "grunt": "~0.4.1",
     "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-jade": "~0.8.0",
+    "grunt-contrib-watch": "~0.5.1",
     "grunt-shell": "~0.5.0",
-    "matchdep": "~0.3.0",
-    "grunt-notify": "~0.2.14"
+    "grunt-stss": "^0.1.0",
+    "grunt-tishadow": "dbankier/grunt-tishadow",
+    "grunt-notify": "~0.2.14",
+    "matchdep": "~0.3.0"
   }
 }
+
