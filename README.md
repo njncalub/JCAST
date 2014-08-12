@@ -14,7 +14,7 @@ Let's be opinionated then. The stack includes:
 
  * Do this:
 ```
- [sudo] npm -d install alloy tishadow grunt-cli
+ [sudo] npm -dg install alloy tishadow grunt-cli stss
 ```
  * [Get started](http://tishadow.yydigital.com/getting%20started) with TiShadow
 
