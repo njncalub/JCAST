@@ -29,6 +29,6 @@ Let's be opinionated then. The stack includes:
  * `grunt [dev_android|dev_ios|dev]` - auto compile and pushes with TiShadow
  * `grunt [test_android|test_ios|test]` - run specs
  * `grunt clean` - deletes all generated files
- * `grunt [iphone6|iphone7|ipad6|ipad7|appstore|adhoc|playstore]` - commands inspired by the work of @FokkeZB on [TiNy](https://github.com/FokkeZB/tn). Project specific settings are configured at the top of the `Gruntfile.js`.
+ * `grunt [iphone6|iphone7|ipad6|ipad7|appstore|adhoc|playstore]` - commands inspired by the work of @FokkeZB on [TiNy](https://github.com/FokkeZB/tn). Project specific settings are configured at the top of the `Gruntfile.coffee`.
 
 License: MIT
